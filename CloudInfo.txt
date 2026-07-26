@@ -159,23 +159,14 @@ now create index.html page in that folder then write code as per the required
 once it is saved the refresh browser.
 
 
-
 =========
-Some Linux Commands
-
-1. ls :- shows all the content within working folder/directory. 
-2. pwd :- Present Working Directory :- show current working location. 
-3. clear :- clears screen
-4. exit :-  disconnect from the server.
-5. sudo yum update :-  it will update server.
-6. mkdir  <foldername> :-  to create a folder
-7. cd <foldername> :-  to enter into that folder
-8. cd .. :-  to comeout from that folder
-9. vi <filename> :-  to create a new file
-10. cat <filename> :- to view content from the file
-
-
-
+Steps to work with VI Command
+-----------------------------
+1. vi FileName
+2. It Opens an editor, then Type "Shift+I"
+3. Now type the required content
+4. Click on "Esc" button
+5. Type :wq then press enter key to comeout of editor
 
 
 
