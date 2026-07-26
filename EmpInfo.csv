@@ -1,0 +1,11 @@
+EMPNO ,ENAME,AGE,DEPARTMENT,SALARY
+1001,Lokesh,24,Finance,15000
+1002,Ramesh,35,Sales,12000
+1003,Kiran,27,HR,25000
+1004,Mahesh,35,Finance,14000
+1005,Naresh,24,Sales,12000
+1006,Rohini,27,HR,24000
+1007,Lavanya,25,Finance,15000
+1008,Preethi,24,Sales,12000
+1009,Priya,28,HR,25000
+1010,Paramesh,28,Finance,15000
