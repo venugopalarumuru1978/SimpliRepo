@@ -1,0 +1,139 @@
+Today's Agenda
+--------------
+Web Programming
+	HTML 
+	CSS
+	JavaScript
+--------------
+What is a html?
+
+IT is a markup language which meant for creating and desiginging the web pages. 
+HTML :-  Hyper Text Markup Language
+
+Markup langauges will not have any programming concepts. these are exist only commands called as tags.
+Each tag having it's own action to present something, so that html mainly used to present strucutre of the page. 
+
+there are several markup langauges exist
+1. html
+2. dhtml(css)
+3. XML
+4. XAML
+5. XHTML
+----------------
+What is a tag?
+	It is a command of the html which is enclosed within the <> and </>
+	There are two types of tags
+		1. Containter Tags
+		2. Non-Container Tags
+
+	Container tags are having begining and ending tags.
+	<tagname attributes....> and </tagname>
+
+	Non-Container tags are having only begining tag
+	<tagname attributes..... />
+
+Structure of HTML
+------------------
+<html>
+	<head>
+		<title>Title of the page</title>
+		<meta ..... />
+	</head>
+
+	<body>
+		<actual program of the web page>
+	</body>
+</html>
+------------------
+Generally we don't any specific software for the html, css and javascript. 
+just need any text editor and to execute need any browser. 
+
+Now a days, we have some third party tools where we use to develop pages. So that, we use here VSCOde software. 
+
+---------------------------
+What is the latest version of HTML?
+	HTML & HTML5
+	CSS  & CSS3
+
+	HTML & CSS	:-  we can create web pages for specific devices(Computers-Laptops/Desktops)
+	HTML5 & CSS3	:-  It comes with responsive web designing(One Structure should be suitable for multiple 					different sizes of gadgets)
+	
+	<!DOCTYPE html>  :- it represents HTML5
+----------------------------------
+Some Simple Tags:- 
+
+h1,h2, ....., h6  - all are heading tags to represent headings. 
+<b>Bold</b>
+<i>Italic</i>
+<u>Underline</u>
+<sup>Super Script</sup>
+<sub>Sub Script</sub>
+<p>Para graph</p>
+<hr /> Horizantal Line
+<br /> Line Break
+<img  src="file name with path"  height="no of pixels/%age"  width="no of pixels/%age" alt="alternative text" />
+				to present image on browser. 
+--------------------------------------
+Table Tag:-  it is meant for presenting any content in table format. 
+
+<table border="1/0"  width="%age">
+	<tr>  // table row
+		<th>Col Head</th>  // table head
+		<th>Col Head</th>
+		............
+	</tr>
+
+	<tr>
+		<td>Value</td> // table data
+		<td>Value</td>
+		...........
+	</tr>
+	..............
+</table>
+
+colspan	:-  merging multiple cols as one col
+rowspan	:-  merging multiple rows as one row
+---------------------------------------------
+List Tags:-   These tags are used to provide textual info point by point. 
+
+there are 3 types of list tags
+
+	1. Ordered List :-   points can be present using 1/I/i/a/A
+
+			<ol  type="1/I/i/a/A">
+				<li>Point-1</li>
+				<li>Point-2</li>
+				...............
+				<li>Point-n</li>
+			</ol>
+
+	2. Unordered List :-   points can be presented using symbols (square/dot/circle)
+
+			<ul  type="circle/dot/square">
+				<li>Point-1</li>
+				<li>Point-2</li>
+				...............
+				<li>Point-n</li>
+			</ul>
+	3. Defintion List :-  Heading and it's definition will be presented
+			<dl>
+				<dt>HEading</dt>  // data term
+				<dd>defintion</dd>  // data definition
+			</dl>
+
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+Today's Agenda
+--------------
+GIT Commands
+--------------
+
+Configuration commands
+
+git config  --global  user.name "venugopalarumuru1978"
+git config --global user.email "mailmevenu@gmail.com"
+
+Steps for Pulling GitHub Repo into local repo:- 
+-----------------------------------------------
+1. First Start Process
+git  init
+2.  Add Github repo to local repo
+	git remote add origin <repo url>
+git remote add origin https://github.com/venugopalarumuru1978/SimpliRepo.git
+3.  Now use pull command to get repo
+	git pull --rebase  origin master 
+------------------------------------------------
+Steps for Pushing files from local repo to github repo
+------------------------------------------------
+1.  First Start Process
+git init
+2.  add file to the staging area
+git  add  <file names>
+	to add all files
+	git add .
+	to add specific file
+	git add <file name>
+3.  Check the added files as follow
+	git status
+4.  Make commit for pushing files
+	git commit -m  "commit msg"
+5.  now push files
+	git push -u origin master
+---------------------------------------------------
+git remote remove origin
+-------------------------------------
+How to create a branch and working with branches
+
+git branch   <branchname>   //  to create branch
+
+git branch // to show all branches
+
+git  checkout  <branch name>  // to switch b/w branches
+-------------------------
+steps 
+
+git branch  student
+git branch
+git  checkout  student
+
+	now goto localrepo folder then copy paste 1 or 2 files
+
+git add .
+git commit -m "std branch files"
+git push -u  origin student
+----------------------------
