@@ -1,0 +1,145 @@
+Today's Agenda
+---------------
+1. HTML Tags
+2. Working with CSS. 
+---------------
+Anchor Tag :-  It is meant for page navigations, i.e. creating hyperlinks b/w pages. 
+
+<a href="Page name with path"  target="....">Link Text / Link Image</a>
+
+HTML Constants  :- 
+
+Space  :-  &nbsp;  - Non Breaking Space  1 space
+Greater Than :-  &gt;
+Less Than :-  &lt;
+-----------------------
+CSS :-  What is a CSS?
+		Cascading Style Sheets
+
+	Purpose is to adding styling to the html tags as well as elements. 
+		i.e. adding colors, shapings, ......
+
+
+CSS can be applied into three ways
+
+1. Inline CSS
+2. Page Level CSS
+3. Site Level CSS
+
+Inline CSS :-  these css are applied to every html tag with style property. 
+
+	<tag_name  style="propname:value;propname:value;....." />
+
+
+	Styling part,  margin, padding
+
+<p style="text-align: justify;
+    background-color: blanchedalmond;
+    color: brown;
+    padding: 20px;
+    border:double;
+    border-color: darkblue;
+    border-radius: 10px;">
+   
+2. Page Level CSS :- 
+These are written in separate tag <style>...</style> which is located in <head> tag. 
+	what ever css is written here, i.e applied in that page for every tag. it should written as follows
+
+a. for every tag css
+tagname {
+	propname:value;
+	propname:value;
+	....
+	propname:value;
+}
+
+b. defining user-defined css classes :- 
+		here it allows to define user required css classes.
+		these can be defined as follows
+			a. with .(dot) operator
+				.css_classname{
+					propname:value;
+					......
+				}
+		those classes are implemented to tags with "class" property
+			<tagname  class="css_classname" ..... />
+
+
+			b.  with #(hash) operator
+				#css_classname{
+					propname:value;
+					......
+				}
+
+			those classes are implemented to tags with "id" property
+			<tagname  id="css_classname" ..... />
+		
+3. Site Level CSS :-  
+		These css classes can be used into multiple web pages. 
+
+		Steps :- 
+			1.  Create a separate file with .css extension.
+			2.  Define  css classes in that css file as per the required. 
+			3.  Link that css file to the html page as follows in <head> tag. 
+				<link rel='stylesheet' type='text/css' href='css file name'>
+----------------------------------
+HTML Forms :- 
+These forms are used to provide input to the html page and that input will be collected in the form of variables for later process. 
+
+HTML provides different tools to get an input. 
+TextBox, Radiobutton, Checkbox, Dropdownlist, PasswordBox, Buttons, ........
+
+Most of the tools will be created with <input> tag. 
+
+<input type="text/radio/checkbox/email/button/......"   name="name of tool"   value="value of tool" ...... />
+
+for textbox :-  allows to enter single line of text
+	<input type="text"  name/id="name of tool"  value="value of tool" ... />
+
+for passwordbox :-  allows to enter invisiable text
+	<input type="password"  name/id="name of tool"  value="value of tool" ... />
+
+for buttons :- 
+	there are 3 types of buttons
+		button	:-  it is meant for executing script function. 
+		submit	:-  it is meant for submitting page to the server along with input. 
+		reset	:-  it is meant for refreshing / reloading page. 
+
+	<input type="button/submit/reset"  value="text for visiable on button"  .... />
+
+for radio buttons:-  these allows to select anyone option from group of options. 
+	<input type="radio"   name="name of tool"   value="value"  />
+		<label>Visiable text</label>
+
+	Note :-   for radio buttons, name attribute should be same for one group of radio buttons. 
+
+for checkbox :-  this tool allows to select multiple options from group of options. 
+		<input type="checkbox"  name="name of tool "  value="value " />
+		<label>Visiable Text</label>
+
+for numeric textbox :-  it allows to input only numbers with specified range. 
+		
+		<input type="number"  name="name of tool" value = "val"  ... />
+
+for email :-  <input type="email" .... />
+
+for calender :-  <input type="date" .... />
+
+for telephone :-  <input type="tel" .... />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

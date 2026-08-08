@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+    background-color: brown;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+    background-color: blanchedalmond;
+    color: brown;
+    padding: 20px;
+    border:double;
+    border-color: darkblue;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: burlywood;
+    margin: 20px;
+}
+
+td{
+    padding: 10px;border: solid;border-radius: 15px;
+}
+
+.head_css{
+    text-align: center;
+    background-color:green;
+    color: yellow;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#para1{
+    text-align: justify;
+    background-color:cornflowerblue;
+    color:bisque;
+    padding: 20px;
+    border:solid;
+    border-color: darkblue;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
