@@ -127,6 +127,80 @@ for calender :-  <input type="date" .... />
 
 for telephone :-  <input type="tel" .... />
 
+for Dropdown :-   It allows to select anyone option from group of options. 
+
+	<select name/id = "name of tool">
+		<option value="val..">Visiable Text</option>
+		<option value="val..">Visiable Text</option>
+		<option value="val..">Visiable Text</option>
+		.......
+	</select>
+
+for Multiline Textbox :-  It allows to enter multiple lines of text. 
+
+		<textarea  name/id="name of tool"   rows="no of lines"  cols="no of chars">
+			some text
+		</textarea>
+----------------------------
+Page Submition:-  
+	the process of submiting page to the server along with data is called page submition. 
+
+	<form> tag :-  this tag is used to hold html form(i.e. all input tools)
+			and that form should contain "submit" button. 
+
+	whenever we click "submit" button, it automatically send page to the connected server along with data
+
+	<form  name="form name"  method="POST/GET"  action="pagename" ......>
+
+		for designing tools
+
+		<input type="submit"  value="Visiable text" .... />
+	</form>
+
+	As per the web there are 4 types of request exist
+
+	POST :-  This method is used whenever we submit page to the server/while sending data to the server. 
+	GET  :-  This metehod is used to retrive something from server(it is a default method).
+	PUT  :-  this is for modify
+	DELETE :-  this is for delete
+
+	action attribute :-  it holds/specifies a page which should process whenever we click submit button. 
+---------------------
+What is a reponsive web design?
+
+Responsive Web Design (RWD) is a development approach where a single website automatically adjusts its layout, images, and content to look good on all screen sizes and devices. it eliminates the need to build separate sites for desktop and mobile devices. Instead, the site dynamically fluidly rearranges itself to fit the user's viewport, whether it is a smartphone, tablet, laptop, or desktop monitor.
+
+As per the web, there is a plug-in BootStrap. which will provide pre-defined css class and js classes for every html tag.
+
+there is a website:  www.getbootstrap.com will provide bootstrap plugin
+
+<div> tag is one of the container where it allows to hold different other elements of html. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
