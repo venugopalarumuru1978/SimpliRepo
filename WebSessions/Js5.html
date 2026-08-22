@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">Java Script</h1>    
+    <hr />
+    <form  name="frmTest">
+        <p style="text-align: center;">
+            <label>Value-1 </label>
+            <input type="text"  name="txtVal1" />
+            <br />            <br />
+            <label>Value-2 </label>
+            <input type="text"  name="txtVal2" />
+            <br />            <br />
+            <input type="button"  value="Addition" onclick="AddValues()" />
+            &nbsp;&nbsp;&nbsp;
+            <input type="button"  value="Clear Form" onclick="ClearForm()" />
+        </p>
+    </form>
+    
+    <h2 id="resinfo" style="text-align: center;"></h2>
+
+    <script type="text/javascript">
+        function  AddValues()
+        {
+            let x = parseFloat(frmTest.txtVal1.value);
+            let y = parseFloat(frmTest.txtVal2.value);
+
+            let sum = x+y;
+
+            document.getElementById("resinfo").innerHTML = "Addition is " + sum;
+        }
+
+        function ClearForm()
+        {
+            frmTest.txtVal1.value = "";
+            frmTest.txtVal2.value = "";
+            document.getElementById("resinfo").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

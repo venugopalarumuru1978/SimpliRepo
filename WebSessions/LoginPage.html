@@ -18,7 +18,7 @@
                         <b>Login Here</b>
                     </div>
                     <div class="card-body bg-secondary">
-                        <form name="frmLogin"  method="post" action="CSS3.html">
+                        <form name="frmLogin"  method="post" onsubmit="return LoginInfo()" action="CSS3.html">
                             <p style="width: 100%;">
                                 <label>Username</label>
                                 <input type="text"  name="txtName" placeholder="Username" class="form-control" />
@@ -26,17 +26,50 @@
                                 <input type="password"  name="txtPwd"  placeholder="Password" class="form-control" />
                                 <br />
                                 <p style="text-align: center;width: 100%;">
-                                    <input type="submit"  value="Login Here" class="btn btn-success" />
+                                    <input type="submit"  value="Login Here" class="btn btn-success"  />
                                     &nbsp;&nbsp;&nbsp;&nbsp;
                                     <input type="reset"  value="Reset Form" class="btn btn-danger" />
                                 </p>
                             </p>    
-                        </form>        
+                        </form>  
+                        <div style="text-align: center;color:red"  id="result"></div>      
                     </div>
                 </div>
             </div>
             <div class="col-md-3"></div>
         </div>
     </div>
+
+    <script  type="text/javascript">
+        function LoginInfo()
+        {
+            let uname = frmLogin.txtName.value;
+            let pwd = frmLogin.txtPwd.value;
+            if(uname==""  &&  pwd=="")
+            {
+                document.getElementById("result").innerHTML = "Please enter username and password";
+                return false;
+            }
+
+            else if(uname==""  &&  pwd=="venu@123")
+            {
+                document.getElementById("result").innerHTML = "Please enter username";
+                return false;
+            }
+
+            else if(uname=="Venugopal"  &&  pwd=="")
+            {
+                document.getElementById("result").innerHTML = "Please enter password";
+                return false;
+            }
+            else if(uname=="Venugopal"  &&  pwd=="venu@123")
+                return true;
+            else
+            {
+                alert("Please check username / password");
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>

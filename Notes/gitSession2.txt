@@ -2,7 +2,6 @@ Today's Agenda
 --------------
 GIT Commands
 --------------
-
 Configuration commands
 
 git config  --global  user.name "venugopalarumuru1978"

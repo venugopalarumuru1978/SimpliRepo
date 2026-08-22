@@ -1,0 +1,107 @@
+Today's Agenda
+--------------
+Java Script
+
+What is a Script?
+	It is a programming with web page.
+
+	We Develop a web page using HTML & CSS, that page is Static Page. 
+
+	Functionality of the web page is written in two ways
+			1. Client Side Functionality
+				This kind of programming will executed on client browser and output also shown in 
+				client browser. 
+
+				here completly uses script languages. 
+						
+			2. Server Side Functionality
+				This kind of progrramming will be executed on server side and output will be sent to 				client system.
+
+				here we have to work on server side programming languages. 
+
+					Java -  Servlets / JSP
+					Dotnet -  Asp.net
+					Python - Django
+					Php 
+Script Languages :-   
+		ECMA Script  	-  Eurpoiean Computers Manafactures Association Script
+ 		VB Script	-  Visual Basic Script - Internet Explorer, VB Script works only IE. 
+
+		Java Script
+		Type Script
+		ES6/7
+
+What is a Variable?
+		It is a named memory location to store value temply. 
+
+			As per JavaScript, variables can be declared as follows
+
+			var/let  <variable name> = <Value>
+
+		Variable Names must be one word and it should starts with an alphabet.
+
+		var x = 100;
+		var y = 12.45;
+
+		As per the java script, there 4 different data types based on value assigned to variable. 
+
+		Number  =   integers / float (decimal)
+		String  = text
+		Boolean = true / false
+		Any  = to store any type of value. 
+------------------------------
+	console.log() :- to print something on browser console
+	typeof() :-  to print data type of variable
+	prompt() :-  It is used to take input into variable at the time of execution. 
+		var  <variable>  = prompt("Some Text ")
+
+	alert() :-  It is used to print/ show something on dialog box. 
+--------------------------
+Control Statements :-  these statements are used  to control flow of program execution. 
+			if statement
+			looping statements(while,for,do-while)
+			switch statement(switch - case)
+------------------------------
+Every  Script Language is a function based script language. 
+How to create a user defined function?
+
+	function  <fun_name>(arg1, arg2,...)   // defining the function
+	{
+		body of the function
+	}
+
+How to execute a user defined function?
+
+	<fun_name>(argVal1, argVal2, ....);   // calling the function
+--------------------------------------------
+A function can take arguments  and can return a value. 
+
+An argument is a value which we pass at the time of function calling. A functions any no of arguments. 
+
+A function can return value. 
+
+
+While creating a function there different combinations 
+
+1.  Without arguments and without return value
+2.  With arguments and without return value
+3.  With arguments and with return value
+-------------------------
+Variables are two types based on their location
+
+	1.  Global Variables   :-   The variable which are declared in begining ofthe programming(not in any fun).
+					these are accessed in all the functions of the program.
+					usually these variables are declared with "var" keyword
+	2.  Local Variables :-   these variables are declared within the function with let variable. 
+				these are accessed only in that function. 
+---------------------------------------
+
+parseInt() :-  it is used to convert string oriented integer value into integer type.
+parseFloat() :-  it is used to convert string oriented float value into float type.
+
+
+
+
+
+
+

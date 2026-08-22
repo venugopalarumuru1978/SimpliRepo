@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body onload="loadItems()">
+    <h1 style="text-align: center;">Java Script</h1>    
+    <hr />
+    <form name="frmDdl">
+        <p style="text-align: center;">
+            <label>Birth Date</label><br />
+            <select name="ddlDay" id="ddlDay">
+            </select>
+
+            <select name="ddlMonth">
+                <option value="-2">Month</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+
+            <select name="ddlYear" id="ddlYear">
+            </select>
+
+            <input type="button"  value="Click Me" onclick="getDateInfo()" />
+        </p>
+    </form>    
+    
+    <div style="text-align: center;color:green"  id="result1"></div>
+
+    <script type="text/javascript">
+
+        function loadItems()
+        {
+            let dayItems = "<option value='-1'>Day</option>";
+            for(let i=1;i<=31;i++)
+            {
+                dayItems = dayItems + "<option value='" + i + "'>" + i + "</option>";
+            }            
+            document.getElementById("ddlDay").innerHTML = dayItems;
+
+            let yearItems = "<option value='-3'>Year</option>";
+            
+            let dt = new Date();
+
+            let yr = dt.getFullYear();  // it will write only year.
+            //alert(yr + "  "  + dt);
+
+            for(let i=yr;i>=1980;i--)
+            {
+                yearItems = yearItems + "<option value='" + i + "'>" + i + "</option>";
+            }
+
+            document.getElementById("ddlYear").innerHTML = yearItems;
+        }
+
+        function getDateInfo()
+        {
+
+            let day = frmDdl.ddlDay.value;
+            let month = frmDdl.ddlMonth.value;
+            let year = frmDdl.ddlYear.value;
+
+            let res = day + " - " + month + " - " + year;
+
+            document.getElementById("result1").innerHTML = res;
+
+        }
+    </script>
+</body>
+</html>

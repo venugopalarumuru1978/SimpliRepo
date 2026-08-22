@@ -1,0 +1,57 @@
+Scripting Part, 
+
+there is Event handling Programming occurs
+
+What is a Event?
+
+It is an action oriented method/function which will execute at particular situation. 
+
+Event =  Action
+			button :-  click is an event. 
+				   doubleclick is an event
+
+Events		EventProps
+------		-------------
+click		onclick
+doubleclick     ondblclick
+mousemove
+mouseover
+keypress
+keyup
+keydown
+focus
+leave
+load		onload  =  is used to execute script whenever <body> tag is loading.
+change 		onchange  = is used for radio buttons / dropdownlist.
+submit		onsubmit = it works whenever page is submitted to the server.(has to use in <form> tag.)
+--------------------------
+how to get/set values from any input tool. 
+
+		"value" property has to be used along with tool name / id attribute.
+
+		if it is "name" attribute
+			formname.toolname.value (either to get value / to set value)
+-------------------
+To identify / get  html  tags without having any inputs, it can be done with "ID" attribute along with following method
+
+"document" is an pre-defined object which will represent presently working web page. 
+it has several methods to perform different actions. 
+	
+getElementById("idname") :- it allows to identify a tag with id attribute
+	it has to following props
+		innerText :-  it allows to show result in text format.
+		innerHTML :-  it allows to show result in text with html format. 
+------------------------
+
+
+
+
+
+
+
+
+ 
+		
+
+
+

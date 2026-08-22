@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">Java Script</h1>    
+    <hr />
+
+    <form name="frmRadio">
+        <p style="text-align: center;">
+        <input type="radio"  name="rdoBank"  value="DC"  onchange="TestRadio()"/>
+        <label>Debit Card</label>
+
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio"  name="rdoBank"  value="CC" onchange="TestRadio()"/>
+        <label>Credit Card</label>
+
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio"  name="rdoBank"  value="NB" onchange="TestRadio()"/>
+        <label>Net Banking</label>
+    </p>
+    </form>    
+    <div style="text-align: center;color:green"  id="result"></div>
+    <hr />
+    <form name="frmDdl">
+        <p style="text-align: center;">
+            <label>Pick Ur City</label><br />
+            <select name="ddlCity" onchange="TestDdl()">
+                <option  value="-1">Ur City</option>
+                <option  value="Hyderabad">Hyderabad</option>
+                <option  value="Amaravathi">Amaravathi</option>
+                <option  value="Bangalore">Bangalore</option>
+            </select>
+        </p>
+    </form>    
+    <div style="text-align: center;color:green"  id="result1"></div>
+
+    <script type="text/javascript">
+
+        function  TestRadio()
+        {
+            let payment = frmRadio.rdoBank.value;
+            
+            if(payment=="DC")
+                document.getElementById("result").innerHTML = "Payment using Debit Card";
+            if(payment=="CC")
+                document.getElementById("result").innerHTML = "Payment using Credit Card";
+            if(payment=="NB")
+                document.getElementById("result").innerHTML = "Payment using Net Banking";
+        }
+
+        function TestDdl()
+        {
+            let ct = frmDdl.ddlCity.value;
+            if(ct!="-1")
+                document.getElementById("result1").innerHTML = "Ur City is " + ct;
+            else   
+                alert("Please select city");
+        }
+
+    </script>
+</body>
+</html>
