@@ -1,0 +1,72 @@
+Today's Agenda
+--------------
+1. Arrays
+2. Json Data
+--------------
+What is an Array?
+
+It is a variable which allows to store multiple values in [....]. 
+
+Array are classified into two types
+
+1. Single Dimensional Array
+2. Two / Multi Dimensional Array
+
+--------------------------------
+1. Single Dimensional Array:- 
+	the process of arranging values either in single row / single col. 
+
+		let/const/var <variable_name> = [val1, val2, val3, ...]
+
+		let  x = [10,20,30];
+
+		As per arrays, each value/element maintains an index no starts from 0, 1, 2, ......
+
+		To access / set value in each element,   variable_name[index]
+
+array having 3 properties 
+
+1. length :-  to count no of values.
+2. constructor :-  it shows the proto type of an array. 
+3. proto type :- 
+--------------------------
+push() :-  it adds a new value to an array at ending position of array
+pop() :-  it removes a last value from an array. 
+shift() :-  it removes first value of an array. 
+unshift() :-  it add new values at begining position. 
+splice(index, no of values) :-  it allows delete values based on index. 
+concat() :-  it allows to concatenate multiple arrays into single array.
+			newArray =  firstArray.concat(secondArray)
+join() :-  it allows to convert an array into string and add specific spearator b/w values of an array. 
+		stringVar = array.join(' symbol ')
+slice() :-  it allows to select specific values from array and returns new array. 
+		newArray =  array.slice(index, position)
+forEach() :-  it allows to work like iterator to access values from array, it avoids looping process.
+filter() :-  it allows to extract values based on condition. 
+--------------------------------------------------
+2. Two / Multi Dimensional Array:-  
+	It is the process of arranging values in multiple rows and cols. 
+
+		var/const/let  <variable_name> = [[val1, val2,...],[val3, val4, ...], ....]
+		let  x = [[10,20,30],[50,60,70]];
+
+
+		here rows and cols can have indexes 
+
+		to access / set values ,   arrayname[rowindex][colindex]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

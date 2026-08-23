@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Even Odd</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        p, label, h2, h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Form</h1>    
+    <hr />
+    <form  name="frmStd">
+        <p>
+            <label>Student Name </label><br />
+            <input type="text"  name="txtSname" />
+            <br /><label>Student Course </label><br />
+            <input type="text"  name="txtCurs" />
+            <br /><br />
+            
+            <input type="button"  value="Add Student" onclick="AddStudent()" />
+        </p>
+    </form>
+    <p>
+        <table width="50%" border="1" id="stdrows">
+            <tr>
+                <th>Student Name</th>
+                <th>Student Course</th>
+            </tr>
+        </table>
+    </p>
+    <script type="text/javascript">
+        // global varaibles
+        var stdinfo = [];
+
+        function AddStudent()
+        {
+            let sname = frmStd.txtSname.value;
+            let curs = frmStd.txtCurs.value;
+
+            let tempstd = [sname, curs];
+            stdinfo.push(tempstd);
+
+            console.log(stdinfo.length);
+            console.log(stdinfo);
+
+            for(let i=0;i<stdinfo.length;i++)
+            {
+                let row = "<tr>";
+                for(let j=0;j<2;j++)
+                {
+                    row = row + "<td>" + stdinfo[i][j] + "</td>";
+                }
+                row = row + "</tr>";                
+                document.getElementById("stdrows").innerHTML += row;                
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
