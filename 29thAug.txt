@@ -1,0 +1,79 @@
+Today's Agenda
+--------------
+1. JSON Data
+2. Spread Operator
+3. Destructuring
+4. Promises
+--------------
+JSON :-  Java Script Object Notation
+JSON is a lightweight, text-based data format used to store and transmit structured data.
+
+	jsonObject = {key1:val1, key2:val2, ......}
+
+Note :-  keys should not be duplicate. 
+
+	stdObject =  {"rollno":1001, "sname":"Satyam", "course":"Java", "fees":15000.00};
+
+	to access values based on key
+
+		jsonObject.key  - will print / get value 
+
+Json Array Object :-  multiple json objects can be placed in array
+
+jsonObj = [
+	{key1:val1, key2:val2, ......},
+	{key1:val1, key2:val2, ......},
+	.........
+	{key1:val1, key2:val2, ......}	
+]
+
+
+JSon Nested Object :-  One json object within another json object.
+
+jsonObj  =  {
+	key1:val1, 
+	key2:{k1:v1, k2:v2, ...},
+	key3:val3, 
+	..................
+}
+========================================
+spread operator (...)
+The spread operator (...) in JavaScript provides a simple and expressive way to expand elements from arrays, strings, or objects. 
+It helps make code cleaner by reducing the need for manual copying or looping. 
+This operator is widely used for cloning, merging, and passing values.
+
+It expands elements of arrays and strings or properties of objects into individual values.
+Commonly used for copying and merging arrays or objects without mutating the original data.
+Improves code readability and flexibility when passing arguments or creating new data structures.
+----------------------------
+Destructuring in JavaScript is a syntax introduced in ES6 that allows you to unpack values from arrays or properties from objects directly into distinct variables. 
+
+It makes your code cleaner, more concise, and significantly easier to read compared to traditional dot or bracket notation.
+---------------------------------------
+Promieses:- 
+
+synchronous    :-  Sequential Process
+
+asynchronous   :-  parelle Process
+----------------------------------------
+JSON - Server:- 
+
+https://www.freecodecamp.org/news/json-server-for-frontend-development/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

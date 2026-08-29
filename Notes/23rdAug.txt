@@ -54,19 +54,4 @@ filter() :-  it allows to extract values based on condition.
 		here rows and cols can have indexes 
 
 		to access / set values ,   arrayname[rowindex][colindex]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-----------------------

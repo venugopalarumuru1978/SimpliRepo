@@ -1,0 +1,18 @@
+During the course, students will develop:
+
+Knowledge of concepts, techniques, and applications used in AI.
+An understanding of AI's impact on daily life.
+Knowledge of laws and regulations concerning AI.
+The ability to reflect on legal, ethical, economic, and security aspects related to AI.
+Knowledge of the similarities and differences between human intelligence and artificial intelligence.
+
+Course Content
+AI: Definition, history, and social impact.
+Problem-solving with AI.
+Application areas.
+Search and algorithms.
+Prediction and regression analysis.
+Machine learning and the importance of data quality.
+Classification, object recognition, and learning.
+Generative AI.
+Artificial General Intelligence (AGI).

@@ -34,11 +34,10 @@
         </table>
     </p>
     <script type="text/javascript">
-        // global varaibles
-        var stdinfo = [];
 
         function AddStudent()
         {
+            var stdinfo = [];
             let sname = frmStd.txtSname.value;
             let curs = frmStd.txtCurs.value;
 
@@ -57,10 +56,8 @@
                 }
                 row = row + "</tr>";                
                 document.getElementById("stdrows").innerHTML += row;                
-            }
-            
+            }            
         }
-
     </script>
 </body>
 </html>
