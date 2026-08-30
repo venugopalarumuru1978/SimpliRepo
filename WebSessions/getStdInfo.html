@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body  onload="loadStudentsInfo()">
+    <h1 style="text-align: center;">Fetching Student Info using Ajax GET</h1>
+    <hr />
+    <table width="100%" border="1"  id="getstd">
+        <tr>
+            <th>Std ID</th>
+            <th>Std Name</th>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+
+        function loadStudentsInfo()
+        {
+            let reqObj = new XMLHttpRequest();
+            reqObj.open('GET', 'http://localhost:3000/students', true);
+            
+            reqObj.onreadystatechange = function () {
+            if (reqObj.readyState === 4 && reqObj.status === 200) {
+                
+                        let jsonStdInfo = JSON.parse(reqObj.responseText);                    
+                        displayJSON(jsonStdInfo);            
+            }
+        };
+        reqObj.send();
+        }
+
+        function displayJSON(jsonStdInfo)
+        {
+            console.log(jsonStdInfo);
+
+            let rows = "";
+
+            for(let i=0;i<jsonStdInfo.length;i++)
+            {
+                let row = "<tr>";
+                row = row + "<td>" + jsonStdInfo[i].id + "</td>";
+                row = row + "<td>" + jsonStdInfo[i].name + "</td>";
+                row = row + "</tr>";
+                rows = rows + row;
+            }
+            //alert(rows);
+            document.getElementById("getstd").innerHTML += rows;
+        }
+
+    </script>
+</body>
+</html>

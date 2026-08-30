@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body  >
+    <h2 style="text-align: center;">
+        <a href="AddStd.html">New Student</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="getStdInfo1.html">All Students</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="Search.html">Search Student</a>
+    </h2>
+    <hr />
+
+    <h1 style="text-align: center;">Search Student Info using FETCH API</h1>
+    <hr />
+
+    <form  name="frmSearch"  method="POST">
+        <p style="text-align: center;">
+            <label>Std ID</label>           
+            <input type="text"  name="txtId" />
+            <input type="button"  value="Search" onclick="SearchStudentsInfo()" />
+        </p>
+    </form>
+    
+
+    <table width="100%" border="1"  id="getstd">
+    </table>
+
+    <script type="text/javascript">
+
+        function SearchStudentsInfo()
+        {   // by default fetch() method passes GET request
+
+            let sid = frmSearch.txtId.value;
+            alert(sid);
+            fetch('http://localhost:3000/students/' + sid)
+                .then(response => 
+                {                   
+                    response.json()
+                })                
+                .then(data => 
+                {
+                    //console.log(data);
+                    displayJSON(data);
+                })
+                .catch(error => {
+                    alert('Error:' + error)
+                });                
+        }
+
+        function displayJSON(jsonStdInfo)
+        {
+            console.log(jsonStdInfo.id);
+
+            if(jsonStdInfo.id !== "undefined")
+            {
+            let rows = "<tr><th>Std ID</th><th>Std Name</th></tr>";
+                rows = rows + "<tr><td>" + jsonStdInfo.id + "</td>";
+                rows = rows + "<td>" + jsonStdInfo.name + "</td></tr>";                            
+            //alert(rows);
+                document.getElementById("getstd").innerHTML = rows;
+            }
+            else
+                alert("Student Not Found");
+        }
+    </script>
+</body>
+</html>

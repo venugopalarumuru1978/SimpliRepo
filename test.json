@@ -1,13 +1,58 @@
 {
-   "students":[
-	{"id":101,"name":"Pavan"},
-	{"id":102,"name":"Kiran"},
-	{"id":103,"name":"Mohan"}
-	],
-    "employee":[
-	{"eid":11,"ename":"Pavani"},
-	{"eid":12,"ename":"Kiranmayee"},
-	{"eid":13,"ename":"Mohana"}
-	]
+  "students": [
+    {
+      "id": "izk78-HAbXc",
+      "name": "Lavanya"
+    },
+    {
+      "id": "yhNyTG7mzFs",
+      "name": "Vikas Kumar"
+    },
+    {
+      "id": "eI5qUfcoAo0",
+      "name": "Kiran Kumar"
+    },
+    {
+      "id": "wNT-mxWk7II",
+      "name": "dfgfdsgsdf"
+    },
+    {
+      "id": "kEZKWo-faYQ",
+      "name": "sdsvdfvd"
+    },
+    {
+      "id": "D79dCyZsbM8",
+      "name": "dfgfdg"
+    },
+    {
+      "id": "63a8uSnbyjw",
+      "name": "dgdhgh"
+    },
+    {
+      "id": "amDEPdKo2yw",
+      "name": "Murari Kumar"
+    },
+    {
+      "id": "dXJ3uQP7EvM",
+      "name": "Varun"
+    }
+  ],
+  "employee": [
+    {
+      "eid": 11,
+      "ename": "Pavani",
+      "id": "zm-le6fK0Og"
+    },
+    {
+      "eid": 12,
+      "ename": "Kiranmayee",
+      "id": "zAVTmlo_2bM"
+    },
+    {
+      "eid": 13,
+      "ename": "Mohana",
+      "id": "5aC39CaoiD4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
-

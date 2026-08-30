@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h2 style="text-align: center;">
+        <a href="AddStd.html">New Student</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="getStdInfo1.html">All Students</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="Search.html">Search Student</a>
+
+    </h2>
+    <hr />
+
+    <h1 style="text-align: center;">Adding New Student using FETCH API</h1>
+    <hr />
+    <form  name="frmAdd"  method="POST" onsubmit="return newStudent()" action="getStdInfo1.html">
+    <p style="text-align: center;">
+        <label>Std ID</label>
+        <br />
+        <input type="text"  name="txtId" />
+        <br />
+        <label>Std Name</label>
+        <br />
+        <input type="text"  name="txtSname" />
+        <br /><br />
+        <input type="submit"  value="Add Student" />
+    </p>
+</form>
+
+<script type="text/javascript">
+
+    function newStudent()
+    {
+        let sid = frmAdd.txtId.value;
+        let sname = frmAdd.txtSname.value;
+
+            const stdData = { id: sid, name: sname};
+            //alert(JSON.stringify(stdData));
+            fetch('http://localhost:3000/students', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(stdData)
+            })
+            .then(response => response.json())
+            .then(result =>{
+                console.log(result);
+                //alert(result);
+                return true;
+            })
+            .catch(err =>{
+                alert("Error " + err);
+                return false;
+            });
+            return true;
+    }
+</script>
+
+</body>
+</html>
