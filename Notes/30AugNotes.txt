@@ -1,0 +1,34 @@
+Today's Agenda
+--------------
+1. Postman Tool with Json-Server API
+2. Ajax
+3. Fetch API
+--------------
+How to install json server
+
+1. goto command prompt then use following command(ur system should have nodejs)
+	npm install -g json-server
+
+2. Create json file  with proper data (db.json)
+
+3. start server, goto command prompt then use following command
+	json-server --watch  db.json
+4. open browser, then use following url to open json server
+	http://localhost:3000/
+------------------------------
+there are different types of Requests
+GET	:-  It is used to when ever we retriving some thing from server.
+			it meant for view all data / search some data
+POST	:-  It is used to send some data to the server.
+			it meant for saving something in server file.
+PUT	:-  It is used to modify some data into the server.
+DELETE	:-  It is used to delete some data into the server.
+
+		CURD Operations   :-  C - create   U  -  Update   R - Read   D - Delete
+POSTMAN tool is used to test api's(Functionalities based on Request Type).
+------------------------------------------------
+Ajax :- 
+
+
+
+ 

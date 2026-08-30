@@ -37,36 +37,35 @@
         {   // by default fetch() method passes GET request
 
             let sid = frmSearch.txtId.value;
-            alert(sid);
+            //alert(sid);
             fetch('http://localhost:3000/students/' + sid)
-                .then(response => 
-                {                   
-                    response.json()
-                })                
+                .then(response => response.json())                
                 .then(data => 
                 {
-                    //console.log(data);
+                    console.log(data);
                     displayJSON(data);
                 })
                 .catch(error => {
-                    alert('Error:' + error)
+                    alert('Error: ' + error)
                 });                
         }
 
         function displayJSON(jsonStdInfo)
         {
-            console.log(jsonStdInfo.id);
-
-            if(jsonStdInfo.id !== "undefined")
-            {
-            let rows = "<tr><th>Std ID</th><th>Std Name</th></tr>";
+            let rows = "";
+            
+                if(jsonStdInfo.error === "Not Found")
+                {
+                    rows = "<tr><th>No Student Found with given ID</th></tr>";                    
+                }
+                else
+                {
+                rows = "<tr><th>Std ID</th><th>Std Name</th></tr>";
                 rows = rows + "<tr><td>" + jsonStdInfo.id + "</td>";
                 rows = rows + "<td>" + jsonStdInfo.name + "</td></tr>";                            
-            //alert(rows);
+                }
                 document.getElementById("getstd").innerHTML = rows;
-            }
-            else
-                alert("Student Not Found");
+                
         }
     </script>
 </body>
