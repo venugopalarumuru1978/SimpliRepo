@@ -12,3 +12,96 @@
     listItems[i].style.backgroundColor = 'yellow';
   }
 </script>
+
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+
+<script>
+  // Select all <p> elements
+  let paragraphs = document.getElementsByTagName('p');
+  
+  // Change the text color of the first paragraph only
+  paragraphs[0].style.color = 'blue';
+</script>
+
+<div id="menu">
+    <span>Inside Menu 1</span>
+    <span>Inside Menu 2</span>
+  </div>
+  <span>Outside Menu</span>
+  
+  <script>
+    let menu = document.getElementById('menu');
+    
+    // Finds only the 2 spans inside the #menu div
+    let menuSpans = menu.getElementsByTagName('span'); 
+    console.log(menuSpans.length); // Outputs: 2
+  </script>
+
+<!-- HTML Structure -->
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+// JavaScript
+const boxes = document.getElementsByClassName('box');
+
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].style.backgroundColor = 'lightblue'; 
+}
+
+// Matches elements that have BOTH the 'btn' and 'primary' classes
+const primaryButtons = document.getElementsByClassName('btn primary');
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        DOM getElementByClassName() Method
+    </title>
+    <style>
+        h1 {
+            color: green;
+        }
+        body {
+            text-align: center;
+        }
+        .example {
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        GeeksforGeeks
+    </h1>
+    <h2>
+        DOM getElementByClassName() Method
+    </h2>
+    <div>
+        <h4 class="example">
+            div1
+        </h4>
+        <h4 class="yellowBorder example">
+            div2
+        </h4>
+        <h4 class="greenBorder example">
+            div3
+        </h4>
+        <h4 class="example">
+            div4
+        </h4>
+    </div>
+    <script>
+        document.getElementsByClassName('greenBorder example')[0]
+            .style.border = "10px solid green";
+        document.getElementsByClassName('yellowBorder example')[0]
+            .style.border = "10px solid yellow";
+    </script>
+</body>
+
+</html>

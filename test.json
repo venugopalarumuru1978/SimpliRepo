@@ -1,32 +1,20 @@
 {
   "students": [
     {
-      "id": "izk78-HAbXc",
+      "id": "101",
       "name": "Lavanya"
     },
     {
-      "id": "yhNyTG7mzFs",
-      "name": "Vikas Kumar"
+      "id": "102",
+      "name": "Vikas Reddy"
     },
     {
-      "id": "eI5qUfcoAo0",
-      "name": "Kiran Kumar"
+      "id": "124",
+      "name": "Satyam Kumar"
     },
     {
-      "id": "wNT-mxWk7II",
-      "name": "dfgfdsgsdf"
-    },
-    {
-      "id": "kEZKWo-faYQ",
-      "name": "sdsvdfvd"
-    },
-    {
-      "id": "D79dCyZsbM8",
-      "name": "dfgfdg"
-    },
-    {
-      "id": "63a8uSnbyjw",
-      "name": "dgdhgh"
+      "id": "456",
+      "name": "Preethi Kaur"
     },
     {
       "id": "amDEPdKo2yw",
@@ -35,6 +23,10 @@
     {
       "id": "dXJ3uQP7EvM",
       "name": "Varun"
+    },
+    {
+      "id": "8gEdSp8BYjE",
+      "name": "Parvathi"
     }
   ],
   "employee": [

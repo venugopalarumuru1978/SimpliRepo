@@ -27,8 +27,6 @@ DELETE	:-  It is used to delete some data into the server.
 		CURD Operations   :-  C - create   U  -  Update   R - Read   D - Delete
 POSTMAN tool is used to test api's(Functionalities based on Request Type).
 ------------------------------------------------
-Ajax :- 
-
 
 
  

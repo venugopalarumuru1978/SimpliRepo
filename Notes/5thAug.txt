@@ -1,0 +1,92 @@
+
+
+Object Oriented Programming Structure(OOPS):- 
+
+What is an Object?
+	Any thing in the real world is an object. 
+	
+	Any object will have two sections,  Properties/Attributes  and Functionalities/Behaviour
+
+	Mobile is an Object
+	
+		Attributes :-   Size, Model, Company, Color, Memory Capacity, Processor, .....
+		Functionalities :-  Making Calls, Surfing Internet, Making Photo and Videos, ....
+
+Every object is an instance of their parent unit. 
+
+OOPS Concepts :-  
+		Object
+		Class
+		Data Abstraction
+		Data Encapuslation
+		Inheritance
+		Polymarphisum
+partial implmentation of OOPS Concepts is allows in JS.
+
+class :- It is an encapsulated cell which allows to defined attributes and functionalaties of an entity. 
+
+class <classname>
+{
+	variables
+	methods
+}
+
+Constructor :-  it is a special method which will execute automatically whenever we create an object for the class. 
+		it is used mainly to create variables(inputs)
+
+	constructor(arg1, arg2, ...)
+	{
+		code....
+	}
+
+To pass values to the constructor arguments,  while creating object we have to pass it. 
+
+	var  Object = new ClassName(val1, val2, ....)
+====
+Static methods:- These methods will be created with static keywords inside the class. 
+			purpose of the static methods is, making single copy of data from entire class. 
+
+	to call static methods, we have to use class name
+
+		classname.staticmethod name(...)
+==================
+inheritance:- The process of getting features from existing item to new item. 
+here existing item is a parent class and new item is a child class. 
+
+purpose is reusability of the classes. 
+
+here "extends" keyword is used to inherit parent class to the child class. 
+
+class  <child class>  extends <parent class>
+{
+.....................
+}
+
+here no need to create an object for parent class, just create an object for child class then call methods of both parent and child classes. 
+--------------------------------------------
+
+		there are two types of users
+			Administrator
+			Customer
+
+			Login page 
+				Admin Login :- username and password are fixed
+
+			Customer Login  :-  email   password
+
+			Customer Register 
+
+				Cid   CustomerName   Phone   Email   Password
+
+			Food Items  :-    fid   foodname   price  
+
+			Food Orders :-    ordID  orderitems  cid  orderdatetime
+
+			Admin Functionalities 
+				Add Food Items, View Food Items, Update Food Items
+				Viewing Orders
+
+			Customer Functionalities
+				View All Food Items
+				Ordering Food Items
+--------=================================

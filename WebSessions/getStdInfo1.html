@@ -21,6 +21,9 @@
     <table width="100%" border="1"  id="getstd">
     </table>
 
+    <div  id="frmMod" style="width: 100%;text-align: center;">
+    
+    </div>
     <script type="text/javascript">
 
         function loadStudentsInfo()
@@ -48,7 +51,8 @@
                 let row = "<tr>";
                 row = row + "<td>" + jsonStdInfo[i].id + "</td>";
                 row = row + "<td>" + jsonStdInfo[i].name + "</td>";
-                row = row + "<td><input type='button' value='Delete' onclick='delStudent("+  jsonStdInfo[i].id +  ")'/></td>";
+                row = row + "<td><input type='button' value='Delete' onclick='delStudent("+  jsonStdInfo[i].id +  ")'/>";
+                row = row + "&nbsp;&nbsp;<input type='button' value='Modify' onclick='getStdData("+ jsonStdInfo[i].id + ")'/></td>";
                 row = row + "</tr>";
                 rows = rows + row;
             }
@@ -67,6 +71,52 @@
                 //alert('Deleted:', result);
                 loadStudentsInfo();
             } );
+        }
+
+        function getStdData(sid)
+        {            
+            //alert(sid);
+            fetch('http://localhost:3000/students/' + sid)
+                .then(response => response.json())                
+                .then(data => 
+                {
+                    console.log(data);
+                    // create a form to modify
+                    ShowJSONForm(data);
+                })
+                .catch(error => {
+                    alert('Error: ' + error)
+                });
+        }
+
+        function ShowJSONForm(jsonData)
+        {
+            let mForm = "<form name='mStd' method='POST'  action='getStdInfo1.html'>";
+                mForm = mForm + "<br /><label>Student ID</label><br />";
+                mForm = mForm + "<input type='text' name='txtSid'  value='" + jsonData.id + "'/>";
+                mForm = mForm + "<br /><label>Student Name</label><br />";
+                mForm = mForm + "<input type='text' name='txtSname'  value='" + jsonData.name + "'/>";
+                mForm = mForm + "<br /><br /><input type='submit'  value='Update student' onclick='UpdateStudent()' />";
+                mForm = mForm + "</form>";
+            document.getElementById("frmMod").innerHTML = mForm;
+        }
+
+        function  UpdateStudent()
+        {
+            let sid = mStd.txtSid.value;
+            let sname = mStd.txtSname.value;
+            const stdData = { id: sid, name: sname};
+            fetch('http://localhost:3000/students/' + sid, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(stdData)
+            })
+            .then(response => response.json())
+            .then(result =>{
+                console.log("Updated " + result);
+                loadStudentsInfo(); 
+            })
+            .catch((err)=>{console.log(err)});
         }
     </script>
 </body>
