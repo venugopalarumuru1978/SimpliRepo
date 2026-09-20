@@ -1,9 +1,16 @@
 Today's Agenda
 --------------
+Creating React App with Vite
 React Components
 React CSS
 React Images
 -----------------
+Creating React App with Vite
+	npm create vite@latest  <appname>
+	npm create vite@latest  sampleapp
+To run React app
+	npm run dev
+------------------
 What is a Component?
 	It is a building block of the react where it consist some functionality of the application. 
 	this functionality includes designing(HTML & CSS) and actions(Script).
@@ -63,6 +70,8 @@ React CSS :-
 
 Note:- for Inline CSS
 		<h1 style={{color:"red",backgroundColor:"yellow"}}>Hello Text</h1>
+		css for html
+		<h1  style="color:red;text-align:center">Hello World</h1>
 --------------------
 React Images
 		1. Copy all required images and paste it in Public Folder
@@ -84,7 +93,7 @@ Array/List :-
 
 Array, 
 	variable=[val, val2, val3,....]
-List :
+List/Json Obj :
 	variable = [
 	{key:value, key:value, ....},
 	{key:value, key:value, ....},

@@ -1,0 +1,150 @@
+Today's Agenda
+---------------
+Introduction of AI and Gen AI
+---------------
+
+Details: 
+Candidate profile: 
+Name: Alex Johnson 
+Experience: 5 years 
+Industry: Information Technology 
+Skillset: 
+Programming languages: Python, Java, and JavaScript 
+Frameworks and technologies: Django, React, Node.js, and Docker 
+Database management: PostgreSQL and MongoDB
+DevOps and Cloud: AWS, Jenkins, and Kubernetes 
+Soft skills: Excellent communication, team leadership, project management, and problem-solving
+
+Job description Alex is willing to apply:
+● Position: Full Stack Developer
+● Company: Innovative Tech Solutions
+● Location: San Francisco, California
+
+Job responsibility:
+● Develop front-end website architecture and back-end website applications
+● Ensure the responsiveness of applications and work alongside graphic designers for web design features
+● See-through a project from conception to finished product
+● Design and develop APIs
+● Stay abreast of developments in web applications and programming languages
+
+Required skill and qualification:
+● Strong organizational and project management skills
+● Proficiency with fundamental front-end languages such as HTML, CSS, and JavaScript
+● Familiarity with JavaScript frameworks such as Angular JS, React, and Amber
+● Proficiency with server-side languages such as Python, Ruby, Java, and PHP
+● Familiarity with database technology such as MySQL, Oracle, and MongoDB
+● Excellent verbal communication skills
+● Good problem-solving skills
+● Attention to detail
+
+Create a resume for Alex Johnson that showcases his 5-year journey in the IT industry as a full-stack developer. It should highlight his expertise in Python, Java, JavaScript, and key frameworks like Django and React, as well as his skills in database and cloud technologies like PostgreSQL, MongoDB, and AWS. The resume must emphasize Alex's leadership in project development, team collaboration, passion for technology, and continuous learning. Align the resume with the Full Stack Developer role at Innovative Tech Solutions, focusing on his relevant technical and soft skills matching the job's requirements.
+=====================
+
+Scenario: 
+Imagine an online bookstore that offers a variety of titles in multiple languages to cater to a 
+global audience. To expand its reach and provide readers with books in their preferred 
+language, the bookstore utilizes ChatGPT for real-time book translation. 
+
+Prompt: 
+Translate the following book excerpt into these languages like telugu, hindi, tamil, kannada along with english to make it accessible to a broader audience. 
+
+Excerpt from the book: 
+"Journeys through the Echoes" is a captivating exploration of ancient civilizations around 
+the globe. In one chapter, the author delves into the hidden cities of the Amazon, revealing 
+secrets that have been shrouded in mystery for centuries. This passage provides insights 
+into the rituals and customs of the tribes, their architectural innovations, and their profound 
+connection with nature.
+
+====================
+Resume: 
+John Doe 
+123 Main Street, Anytown, CA 12345 | johndoe@email.com | (123) 456-7890 | LinkedIn  
+Objective: 
+Experienced AI ML specialist seeking to leverage expertise in generative models, large 
+language models, and multimodal AI solutions to drive innovation and efficiency in a 
+forward-thinking organization 
+Education: 
+● Master of Science in Computer Science, Specialization in Artificial Intelligence 
+University of California, Berkeley, 2020 
+● Bachelor of Science in Computer Science, Stanford University, 2018 
+Skills: 
+● Expertise in Generative Models, Large Language Models (LLMs), and Multimodal AI 
+● Proficient in Python, TensorFlow, PyTorch, and LangChain 
+● Strong background in stable diffusion, autoencoders, and contrastive learning 
+● Experienced in prompt creation, fine-tuning LLMs, and AI project management 
+● Excellent analytical, problem-solving, and communication skills 
+Professional Experience: 
+AI Research Scientist 
+DeepMind Technologies, San Francisco, California 
+June 2020 - Present 
+● Led the development of a state-of-the-art stable diffusion model, improving image 
+generation quality by 20% 
+● Collaborated on a multimodal AI project, integrating LangChain for enhanced 
+language processing, resulting in a 15% increase in model accuracy 
+● Published five research papers in top-tier AI conferences and journals 
+Machine Learning Engineer 
+OpenAI, San Francisco, California 
+July 2018 - May 2020 
+● Designed and implemented autoencoders for contrastive learning, boosting model 
+efficiency by 25% 
+● Spearheaded the creation of a shared embedding space for multimodal data, 
+enhancing data interoperability and model performance 
+● Conducted workshops and training sessions on AI technologies for cross-functional 
+teams 
+Certifications: 
+● Certified TensorFlow Developer 
+● LangChain Practitioner Certification 
+Professional Affiliations: 
+● Member, Association for the Advancement of Artificial Intelligence (AAAI) 
+● Member, International Society for Generative AI 
+Publications: 
+● Doe, J., et al. (2022). "Advancements in Stable Diffusion for Image Generation." 
+Journal of AI Research. 
+● Doe, J., et al. (2021). "Enhancing Language Processing with LangChain." Proceedings 
+of the AAAI Conference on Artificial Intelligence. 
+
+Prompt: 
+Create a LinkedIn headline that showcases my experience, qualifications, and passion using 
+industry-relevant keywords. Write a summary of around 150 words that highlights my 
+professional journey and unique skills. In the Experience section, provide detailed entries 
+that showcase my contributions and achievements, using action verbs and quantifying 
+results. Also, suggest content for starting conversations with new connections, focusing on 
+recent industry news or their achievements, within 100 words. Additionally, help me craft a 
+LinkedIn post of up to 200 words, sharing insights on a specific topic with relevant SEO 
+hashtags. Offer advice on optimizing my profile to attract recruiters and enhance 
+professional connections.  
+=====================
+Categorize the provided review based on the following input: 
+Positive sentiment: Expresses a favorable view or positive emotions toward the subject 
+Negative sentiment: Expresses an unfavorable view or negative emotions toward the 
+subject 
+Neutral sentiment: Expresses a neutral view or lack of strong emotions toward the subject 
+Mixed sentiment: Contains elements of both positive and negative sentiments or expresses 
+contradictory emotions 
+Questioning sentiment: Expresses curiosity or uncertainty about the subject 
+Appreciative sentiment: Shows gratitude, appreciation, or thankfulness toward the subject 
+Reviews:  
+Provide sentiments for the following reviews: 
+1. “I recently watched 'Eternal Visions’, and it was decent overall. The storyline had an 
+interesting mix of mystery and romance, but it felt somewhat predictable at times. 
+The acting was good, with the cast delivering solid performances, though nothing 
+particularly stood out. The visuals were nice, with some beautiful scenes, but they 
+weren't as captivating as I had hoped. The score was fine, fitting the film's 
+atmosphere, but it didn't leave a lasting impression. In summary, 'Eternal Visions' is 
+an okay movie that might be worth a watch, but it didn't quite live up to my 
+expectations."  
+2. “I just finished reading 'The Nightingale' by Kristin Hannah, and I was blown away. 
+The storytelling was captivating from start to finish, weaving together historical 
+events with deeply relatable characters. I found myself completely immersed in the 
+lives of Vianne and Isabelle, unable to put the book down. The emotional depth and 
+raw honesty of the narrative left a lasting impact on me. I highly recommend 'The 
+Nightingale' to anyone looking for a powerful and unforgettable read.” 
+3. "I had high hopes for the new restaurant in town, but unfortunately, my experience 
+was disappointing. The ambiance was nice, but the service was incredibly slow, and 
+the staff seemed indifferent. The food was mediocre at best, lacking flavor and 
+creativity. Additionally, the prices were exorbitant for what we received. Overall, I 
+wouldn't recommend dining at this establishment unless significant improvements 
+are made." 
+4. "The latest update of the app left me with mixed feelings. While I appreciate the new 
+features and smoother interface, I'm frustrated with the increased battery 
+consumption and the occasional bugs that disrupt my experience." 
