@@ -23,10 +23,6 @@ function DemoState()
                 </td>
             </tr>
         </table>
-        
-        
-        
-        
         </>
     );
 }
