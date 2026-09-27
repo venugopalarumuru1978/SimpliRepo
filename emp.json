@@ -1,0 +1,23 @@
+{
+  "Employee": [
+    {
+      "id": "101",
+      "ename": "Pavan Rao",
+      "job": "Manager",
+      "sal": "25000.00"
+    },
+    {
+      "id": "567",
+      "ename": "Preethi Reddy",
+      "job": "Sr. Developer",
+      "sal": "50000"
+    },
+    {
+      "id": "TmZoSl475KM",
+      "ename": "Baskar ",
+      "job": "Tester",
+      "sal": "10000.00"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

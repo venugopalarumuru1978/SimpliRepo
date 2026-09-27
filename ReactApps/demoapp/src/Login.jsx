@@ -10,7 +10,7 @@ function Login()
     
     const userCheck = () =>{
         if(user==="Venugopal"  &&  pwd==="v@123")
-            navigate('/welcome');
+            navigate('/welcome/' + user);
         else
             setInfo('User Details are in-correct');
     }

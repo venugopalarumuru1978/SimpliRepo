@@ -1,0 +1,132 @@
+Today's Agenda
+--------------
+1. Class Components
+2. Hooks
+3. Axios
+--------------
+Class Components
+	these components are create with class and it should be inherited React.Component
+
+			class <classname> extends React.Component
+			{
+				logic part
+			
+				render(){
+					return(
+						<div>
+							html design
+						</div>
+					);
+				}
+			}
+		
+Note:- Latest Versions of React(React 16 and above) won't used class component. Because these component won't support 
+Hooks Concepts.
+------------------
+Hooks:- 
+
+<html>
+<body onload="demo()">
+.................
+.................
+</body>
+
+<script>
+
+function demo()
+{
+.....
+}
+</script>
+</html>
+--------------
+useEffect(()=>{
+        setStr('This is use Effect hook');
+    });
+
+this will get executed whenever page is re-renders again and again
+
+useEffect(()=>{
+        setStr('This is use Effect hook');
+    },[]); // empty array
+
+this will get executed only once when page is renders
+
+useEffect(()=>{
+        setStr('This is use Effect hook');
+    },[statevar, propvar]);
+
+this will get executed again and again when ever state variable modifies / updates along with first time. 
+----------------------------
+HTTP Request Types :-  GET, POST, DELETE, PUT
+
+	to use these all request types, axios package can be used. 
+
+	install axios module as follows
+	
+	npm install axios
+
+	axios.get("url") = GET
+	axios.post()  = POST
+	axios.delete() = DELETE
+	axios.put() = PUT
+
+-------------
+	useState()
+	useNavigate()
+	useEffect()
+	useParams()
+-------------------------
+	useRef()
+	useContext()
+	useLayout()
+------------------
+
+Employee Info
+		there are two types of users
+
+			Admin :- Logins
+				ALL CURD Operations
+
+			Emp Logins :-  
+				View that emp info
+				Change Password
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

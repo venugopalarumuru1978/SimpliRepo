@@ -15,6 +15,9 @@ import Navbar from './Navbar'
 import Login from './Login'
 import Welcome from './Welcome'
 import Register from './Register'
+import TestCls from './TestCls'
+import FetchData from './FetchData'
+import ParamTest from './ParamTest'
 function App() {
   const [loc, setLoc] = useState('Hyderabad');
 
@@ -32,10 +35,13 @@ function App() {
         <Routes>
           <Route path='/' element ={<Home />} />
           <Route path='/home' element ={<Home />} />
+          <Route path='/pt/:loc/:ph' element ={<ParamTest />} />
           <Route path='/contact' element ={<Contact />} />
           <Route path='/login' element ={<Login />} />
-          <Route path='/welcome' element ={<Welcome />} />
-          <Route path='/reg' element ={<Register />} />
+          <Route path='/welcome/:uname' element ={<Welcome />} />
+          <Route path='/reg/*' element ={<Register />} />
+          <Route path='/cls_c' element ={<TestCls />} />
+          <Route path='/getdata' element ={<FetchData />} />
           <Route path='/ch1' element={<Child1 pname="Satya Prakash" age = {30} location = {loc} />} />
           <Route path='/ch2' element={<Child2 author="Venugopal"  bookname="SQL" isSelling={true} />} />
           <Route path='/ch3' element={<Child3 btnAction = {testClickFun} />} />
