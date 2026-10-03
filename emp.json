@@ -1,22 +1,28 @@
 {
   "Employee": [
     {
-      "id": "101",
-      "ename": "Pavan Rao",
-      "job": "Manager",
-      "sal": "25000.00"
+      "id": "lcOoY4yzRqk",
+      "ename": "Sai Sahasra",
+      "job": "HR-Manager",
+      "sal": "120000.00",
+      "email": "sai_sahasra@gmail.com",
+      "pswd": "sa@123"
     },
     {
-      "id": "567",
-      "ename": "Preethi Reddy",
-      "job": "Sr. Developer",
-      "sal": "50000"
-    },
-    {
-      "id": "TmZoSl475KM",
-      "ename": "Baskar ",
+      "id": "KKY7BzLY_Ow",
+      "ename": "Pravasthi",
       "job": "Tester",
-      "sal": "10000.00"
+      "sal": "15000.00",
+      "email": "pravasthi@gmail.com",
+      "pswd": "pv@123"
+    },
+    {
+      "id": "SVukewgMPEs",
+      "ename": "Renuka",
+      "job": "Tester",
+      "sal": "10000.00",
+      "email": "renuka@gmail.com",
+      "pswd": "r@123"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

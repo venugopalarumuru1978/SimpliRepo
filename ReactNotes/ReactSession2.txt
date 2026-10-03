@@ -36,9 +36,8 @@ What is a Component?
 			}
 
 			export default <function_name>;
-
 Steps :-  
-	a. Create  .js file file in src folder
+	a. Create  .js/.jsx file in src folder
 	b. Create  function with some functionality
 	c. Call this js file in to <App /> Component as a tag <fun_name />
 
@@ -62,16 +61,19 @@ Note:- Latest Versions of React(React 16 and above) won't used class component. 
 Hooks Concepts.
 ------------
 React CSS :- 
+
+for Inline CSS
+		<h1 style={{color:"red",backgroundColor:"yellow"}}>Hello Text</h1>
+		css for html
+		<h1  style="color:red;text-align:center">Hello World</h1>
+
+for CSS Classes
 		1. Create CSS file in Src folder then define all css required.
 		2. import that css file in any component 
 			import './css filename'
 		3. Apply css class with following attribute
 			<tagname className="css classname">Action</tagname>
 
-Note:- for Inline CSS
-		<h1 style={{color:"red",backgroundColor:"yellow"}}>Hello Text</h1>
-		css for html
-		<h1  style="color:red;text-align:center">Hello World</h1>
 --------------------
 React Images
 		1. Copy all required images and paste it in Public Folder

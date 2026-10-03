@@ -1,0 +1,28 @@
+Today's Agenda
+--------------
+1. JSON-SERVER(CRUD OPERATIONS)
+2. Few Other Hooks(useRef, useLayoutEffect, ..)
+-----------------
+Json Server 
+
+Employee Application
+	json data structure(id, ename, job, sal, email, pswd)
+
+There are two users (Admin User, Emp user)
+	for Admin :-  Fixed user name & Password
+			Perform All CRUD Operations
+
+	for Employee :-  email, pswd
+			1. Show that particular emp details
+			2. Change Password
+----------------------
+1. Create react app then install following packages
+
+	a.  react-router-dom
+	b.  bootstrap
+	c.  axios
+
+2. Create  emp.json file with some sample data, then start json-server with that file
+
+3.  Create a component for Adding Emp, then write functionality. 
+
