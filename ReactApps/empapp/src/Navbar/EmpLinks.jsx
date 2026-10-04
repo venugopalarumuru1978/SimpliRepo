@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
-function AdminLinks()
+function EmpLinks()
 {
     return(
         <>
             <div style={{textAlign:"center"}}>
                 <b>
-                    <Link  to="/newemp">New Employee</Link>
+                    <Link  to="/e_bio">Emp Home</Link>
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                    <Link  to="/viewallemp">All Employees</Link>
+                    <Link  to="/cpwd">Change Password</Link>
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                     <Link  to="/logout">Logout</Link>
                 </b>
@@ -17,4 +17,4 @@ function AdminLinks()
     );
 }
 
-export default AdminLinks;
+export default EmpLinks;

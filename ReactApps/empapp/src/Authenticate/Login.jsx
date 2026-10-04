@@ -1,22 +1,47 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
-function Login()
+import axios from "axios";
+function Login(props)
 {
-    const [uname, setUname] = useState('');
-    const [pwd, setPwd] = useState('');
+    const uname = useRef(null);
+    const pwd = useRef(null);
+
     const [info, setInfo] = useState('');
     const navigate = useNavigate();
+    const [emp, setEmp] = useState([]);
+    const [chk, setChk] = useState(false);
+    
+    useEffect(()=>{
+        axios.get('http://localhost:3000/Employee')
+        .then((response)=>{
+            console.log(response.data);
+            setEmp(response.data);
+        })
+        .catch((err)=>{
+            console.log(err);
+        });
+    },[]);
+
 
     const UserCheck = (e) =>{
         e.preventDefault();
-        if(uname==="admin" && pwd==="admin@123")
+        if(uname.current.value === "admin" && pwd.current.value === "admin@123")
         {
+            props.setLoginstatus('admin')
             navigate('/viewallemp');
         }
         else
         {
-            setInfo('Please check username/password');
+            emp.map((em)=>{
+                if(em.email === uname.current.value && em.pswd === pwd.current.value)
+                {
+                    props.setLoginstatus('emp')
+                    setChk(true);
+                    navigate('/e_bio/' + em.id);
+                }
+            });
+            if(chk===false)
+                setInfo('Please check username/password');
         }
     }
 
@@ -32,12 +57,14 @@ function Login()
                     <div className="card-body">
                         <form name="frmLogin" method="post" onSubmit={UserCheck}>
                                     <label>Username / Mail ID</label>
-                                    <input type="text"  name="txtUname"  placeholder="Username" className="form-control"
-                                    onChange={(e)=>{setUname(e.target.value)}} />
+                                    <input type="text"  name="txtUname"  
+                                    placeholder="Username" className="form-control"
+                                    ref={uname}  required />
                                     <br />
                                     <label>Password</label>
-                                    <input type="password"  name="txtPass"  placeholder="Password" className="form-control"
-                                    onChange={(e)=>{setPwd(e.target.value)}} />
+                                    <input type="password"  name="txtPass"  
+                                    placeholder="Password" className="form-control"
+                                    ref={pwd} required />
                             <br /><br />
                             <div className="row">
                                 <div className="col-md-12" style={{textAlign:"center"}}>

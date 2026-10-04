@@ -23,6 +23,30 @@
       "sal": "10000.00",
       "email": "renuka@gmail.com",
       "pswd": "r@123"
+    },
+    {
+      "id": "nZo9_SLA2AU",
+      "ename": "Sameera",
+      "job": "Tester",
+      "sal": "15000.00",
+      "email": "sameera@gmail.com",
+      "pswd": "sam@1234"
+    },
+    {
+      "id": "hTFm9DuWND8",
+      "ename": "Ramana",
+      "job": "Developer",
+      "sal": "20000.00",
+      "email": "ramana@gmail.com",
+      "pswd": "ram@123"
+    },
+    {
+      "id": "OaEZZRbqIBc",
+      "ename": "Kiran Kumar",
+      "job": "Developer",
+      "sal": "20000.00",
+      "email": "kiran@gmail.com",
+      "pswd": "ki@1234"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

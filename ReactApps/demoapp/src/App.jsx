@@ -18,6 +18,8 @@ import Register from './Register'
 import TestCls from './TestCls'
 import FetchData from './FetchData'
 import ParamTest from './ParamTest'
+import RefEx1 from './RefEx1'
+import RefEx2 from './RefEx2'
 function App() {
   const [loc, setLoc] = useState('Hyderabad');
 
@@ -34,6 +36,8 @@ function App() {
 
         <Routes>
           <Route path='/' element ={<Home />} />
+          <Route path='/rf1' element ={<RefEx1 />} />
+          <Route path='/rf2' element ={<RefEx2 />} />
           <Route path='/home' element ={<Home />} />
           <Route path='/pt/:loc/:ph' element ={<ParamTest />} />
           <Route path='/contact' element ={<Contact />} />

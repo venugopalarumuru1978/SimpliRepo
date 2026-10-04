@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-function SearchEmp()
+function EmpBio()
 {
     const {eid} = useParams();
-    // json empty object
     const [emp, setEmp] = useState({});
     
     useEffect(()=>{
@@ -28,7 +27,7 @@ function SearchEmp()
                             <b>Employee Information</b>
                         </div>
                         <div className="card-body">
-                            <table className="table table-dark">
+                            <table className="table table-info">
                                 <thead>
                                     <tr>
                                         <th>Emp ID</th>
@@ -59,4 +58,4 @@ function SearchEmp()
     );
 }
 
-export default SearchEmp;
+export default EmpBio;
