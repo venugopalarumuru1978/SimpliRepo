@@ -1,0 +1,104 @@
+Today's Agenda
+--------------
+1. useRef  Hook
+2. Validations
+3. NavBar(Handling multiple navbars)
+--------------
+Present Continuing EmpApp
+
+There are two types of users 
+
+App having 3 dashboards
+
+1. General(Home, About, Contact, Login)
+
+2. Admin(when logins -  New Employee,  AllEmployees, Logout)
+
+3. Employee(when logins - Emp Home, Change Password, Logout)
+--------------------
+Conditional Operator ?:  (<cond>?<true>:<false>)
+--------------------------------------
+NavBar(Handling multiple navbars)
+
+Step-1 :-   
+Create separate Components for 3 NavBars
+Step-2 :-  
+goto App.jsx, then create one useState variable as follows
+const [loginStatus, setLoginstatus] = useState('gen')
+Step-3:- 
+In <BrowserRouter>  check the conditons as follows
+        {loginStatus == "gen" ? (
+          <Navbar></Navbar>
+        ) : loginStatus == "user" ? (
+          <NavbarUser></NavbarUser>
+        ) : (
+          ""
+        )}
+Step-4:- 
+send this setter status method to the login page as prop
+<Route path='/login'  element={<Login setLoginstatus={setLoginstatus} />} />
+Step-5
+now update status value as per required in login functionality
+props.setLoginstatus('emp')
+--------------
+Validations
+--------------
+Step-1:-
+	Create useState Variable for storing all error info
+    const [formErrors, setFormErrors] = useState({});
+Step-2:- 
+	Create a method to check validations as follows, it must be return boolean value
+    const Validate = () =>{
+
+        const errors = {};
+        let flag = true;
+        if(empinfo.id===0)
+        {
+            errors.idErr = "Emp Number is Required!";
+            flag = false;
+        }
+        if(empinfo.ename==="")
+        {
+            errors.enameErr = "Emp Name is Required!";
+            flag = false;
+        }
+        if(empinfo.job==="")
+        {
+            errors.jobErr = "Emp Job is Required!";
+            flag = false;
+        }
+        if(empinfo.salary===0.0)
+        {
+            errors.salErr = "Emp Sal is Required!";
+            flag = false;
+        }
+        if(empinfo.email==="")
+        {
+            errors.emailErr = "Email is Required!";
+            flag = false;
+        }
+        const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i
+        if(!regex.test(empinfo.email))
+        {
+            errors.emailInvalidErr = "Email is not Valid";
+            flag = false;
+        }
+
+        if(empinfo.pswd==="")
+        {
+            errors.pwdErr = "Password is Required!";
+            flag = false;
+        }
+
+        let pwdlength = empinfo.pswd.length;
+        if(!(pwdlength>= 8 && pwdlength<=20))
+        {
+            errors.pwdlenErr = "Password must be b/w 8 - 20 chars only";
+            flag = false;
+        }
+        console.log(errors);
+        setFormErrors(errors);
+        return flag;
+    }
+
+--------------------
