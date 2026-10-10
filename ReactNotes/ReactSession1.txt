@@ -49,7 +49,6 @@ Advantages :-
 1. Performance will be improved. 
 2. Virtual DOM provided, with this page content will be loaded very fastly. 
 
-
 What is Virtual DOM?
 	React JS Virtual DOM is an in-memory representation of the DOM. DOM refers to the Document Object Model that represents the content of HTML documents as a tree structure so that the programs can be read, accessed and changed in the document structure, style, and content.
 --------------------------------------------

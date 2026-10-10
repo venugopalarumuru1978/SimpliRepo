@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+//import { user_emp_name } from "../Authenticate/Login";
 function EmpBio()
 {
     const {eid} = useParams();
     const [emp, setEmp] = useState({});
+    //const uname = useContext(user_emp_name);
     
     useEffect(()=>{
+        //console.log(uname);
         axios.get('http://localhost:3000/Employee/'+ eid)
         .then((response)=>{
             console.log(response.data);

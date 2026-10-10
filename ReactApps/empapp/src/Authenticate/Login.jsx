@@ -1,8 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import EmpBio from "../Emps/EmpBio";
+//export const user_emp_name = createContext();
 function Login(props)
 {
+  //  const test_info = "Venugopal";
     const uname = useRef(null);
     const pwd = useRef(null);
 
@@ -35,6 +38,11 @@ function Login(props)
             emp.map((em)=>{
                 if(em.email === uname.current.value && em.pswd === pwd.current.value)
                 {
+                    /*
+                    <user_emp_name.Provider value={test_info}>
+                        <EmpBio />
+                    </user_emp_name.Provider>
+                    */
                     props.setLoginstatus('emp')
                     setChk(true);
                     navigate('/e_bio/' + em.id);
