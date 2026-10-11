@@ -30,6 +30,8 @@ function Login(props)
         e.preventDefault();
         if(uname.current.value === "admin" && pwd.current.value === "admin@123")
         {
+            //localStorage.setItem("user_admin_chk", "admin");
+            sessionStorage.setItem("user_admin_chk", "admin");
             props.setLoginstatus('admin')
             navigate('/viewallemp');
         }
@@ -43,6 +45,8 @@ function Login(props)
                         <EmpBio />
                     </user_emp_name.Provider>
                     */
+                    //localStorage.setItem("user_emp_chk", "employee");
+                    sessionStorage.setItem("user_emp_chk", "employee");
                     props.setLoginstatus('emp')
                     setChk(true);
                     navigate('/e_bio/' + em.id);

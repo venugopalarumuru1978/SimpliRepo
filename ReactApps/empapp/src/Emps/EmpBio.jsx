@@ -1,23 +1,32 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 //import { user_emp_name } from "../Authenticate/Login";
 function EmpBio()
 {
     const {eid} = useParams();
     const [emp, setEmp] = useState({});
+    const navigate = useNavigate();
     //const uname = useContext(user_emp_name);
     
     useEffect(()=>{
         //console.log(uname);
-        axios.get('http://localhost:3000/Employee/'+ eid)
-        .then((response)=>{
-            console.log(response.data);
-            setEmp(response.data);
-        })
-        .catch((err)=>{
-            console.log(err);
-        });
+        if(sessionStorage.getItem("user_emp_chk")!=null)
+        {
+            axios.get('http://localhost:3000/Employee/'+ eid)
+            .then((response)=>{
+                console.log(response.data);
+                setEmp(response.data);
+            })
+            .catch((err)=>{
+                console.log(err);
+            });
+        }
+        else
+        {
+            alert('Please login first');
+            navigate('/login');
+        }
     },[]);
 
     return(

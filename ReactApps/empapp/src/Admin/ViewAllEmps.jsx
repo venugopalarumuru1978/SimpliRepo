@@ -9,16 +9,23 @@ function ViewAllEmps()
     const [chk,setChk] = useState(0);
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/Employee')
-        .then((response)=>{
-            console.log(response.data);
-            setEmp(response.data);
-        })
-        .catch((err)=>{
-            console.log(err);
-        });
+        if(sessionStorage.getItem("user_admin_chk")!=null)
+        {
+            axios.get('http://localhost:3000/Employee')
+            .then((response)=>{
+                console.log(response.data);
+                setEmp(response.data);
+            })
+            .catch((err)=>{
+                console.log(err);
+            });
+        }
+        else
+        {
+            alert("Please login first");
+            navigate('/login');
+        }
     },[chk]);
-
 
     const Search = (eid) =>
     {

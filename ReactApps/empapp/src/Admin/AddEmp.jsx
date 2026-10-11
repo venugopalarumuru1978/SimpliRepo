@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function AddEmp()
@@ -14,6 +14,14 @@ function AddEmp()
         "email":"",
         "pswd":""
     });
+
+    useEffect(()=>{
+        if(sessionStorage.getItem("user_admin_chk")==null)
+        {
+                alert('Please login first');
+                navigate('/login');
+        }
+    },[])
     
     const Validate = () =>{
         const errors = {}; // empty local json object

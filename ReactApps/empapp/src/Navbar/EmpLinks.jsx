@@ -10,7 +10,7 @@ function EmpLinks()
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                     <Link  to="/cpwd">Change Password</Link>
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                    <Link  to="/logout">Logout</Link>
+                    <Link  to="/e_logout">Logout</Link>
                 </b>
             </div>
         </>

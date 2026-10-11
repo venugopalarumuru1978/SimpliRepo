@@ -11,6 +11,7 @@ import ChangePwd from './Emps/ChangePwd'
 import GenLinks from './Navbar/GenLinks'
 import EmpLinks from './Navbar/EmpLinks'
 import Logout from './Authenticate/Logout'
+import LogoutEmp from './Authenticate/LogoutEmp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,7 @@ function App() {
             <Route path='/'  element={<Login />} />
             <Route path='/login'  element={<Login setLoginstatus={setLoginstatus} />} />
             <Route path='/logout'  element={<Logout setLoginstatus={setLoginstatus} />} />
+            <Route path='/e_logout'  element={<LogoutEmp setLoginstatus={setLoginstatus} />} />
             <Route path='/newemp'  element={<AddEmp />} />
             <Route path='/cpwd'  element={<ChangePwd />} />
             <Route path='/e_bio/:eid'  element={<EmpBio />} />

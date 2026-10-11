@@ -6,6 +6,8 @@ function Logout(props)
     const navigate = useNavigate();
 
     useEffect(()=>{
+        //localStorage.removeItem("user_admin_chk");
+        sessionStorage.removeItem("user_admin_chk");
         props.setLoginstatus('gen');
         navigate('/login');
     },[]);
