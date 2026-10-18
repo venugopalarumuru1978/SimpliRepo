@@ -1,0 +1,55 @@
+Today's Agenda
+---------------
+JEST Continution
+--------------
+
+JEST
+to write test case
+test(" title of test case", ()=>{
+	test logic
+	finally one asseert has to used to test test case is passed or not.
+});
+
+elements can be identitied by 
+
+byText   = getByText()
+byAttributes
+byTag   = getByRole()
+
+to hold group of test cases within one unit
+
+describe("title of group ", ()=>{
+
+	no of test cases
+});
+
+describe.only("title of group ", ()=>{
+
+	no of test cases
+});
+
+the above code willexecute only that group test cases remaining groups will be skipped
+
+describe.skip("title of group ", ()=>{
+
+	no of test cases
+});
+
+the above code will skip only that group test cases remaining groups will be executed
+
+To test specific test file
+
+npm  run test  <Filename without extension>
+	if file having  Abc.test.jsx, command as follows
+		npm run test Abc
+
+fireEvent :- this object allows to execute events like change, click, mousemove, etc...
+fireEvent.change(tool name, {target:{value:"testvalue"}}
+
+fireEvent.change(input,{target:{value:'abcd'}});
+
+
+-- to generate reports 
+		npm run test -- --coverage   
+				it will generate a folder "coverage", within that index.html file will have
+				report info about test cases
