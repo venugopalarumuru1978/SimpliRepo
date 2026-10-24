@@ -1,0 +1,23 @@
+Employee
+LeaveRequest
+UserDetails
+
+Two types of users
+
+	HR User - Admin
+	Emp User - End User
+
+HR Dashboard
+	adding new emp (Only profiles has to create(emp id, empname dept, mailid, password(pre-generated))
+	show all emp infos
+	show all leave request then accept / reject functionality
+
+Emp Dashboard
+	when emp logins first time, password must be changed
+	Show personal info when he logins
+	Should  provide modify existing details
+	Leave request form
+	Checking Leave Status form
+
+
+

@@ -1,0 +1,13 @@
+Steps to create Redux App
+-------------
+1.  Create new react app
+2.  install following modules
+	npm install react-redux
+	npm install @reduxjs/toolkit  --force
+3.  Create  folder within the application by name "app", within that create a jsx file by name store.jsx
+4.  Create a folder by name "features", within that folder add slicer files to include functionality. 
+			todoSlicer.jsx
+5.   Add the store into main.jsx as a provider to access in entire application
+<Provider store={store}>
+      <App />
+    </Provider>
